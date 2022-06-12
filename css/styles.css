@@ -23,7 +23,7 @@ font-family: 'Roboto', sans-serif; */
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.03em;
 
   color: var(--primary-color-text);
   background-color: var(--main-bgc-color);
@@ -123,6 +123,7 @@ ol {
   text-decoration: none;
 
   color: var(--primary-color-text);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-item-link.current {
@@ -220,6 +221,9 @@ ol {
   border-radius: 4px;
   cursor: pointer;
 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -296,7 +300,6 @@ ol {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
@@ -304,7 +307,6 @@ ol {
   margin-top: 10px;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--secondary-color-text);
 }
 
@@ -337,7 +339,6 @@ ol {
   height: 70px;
   font-weight: 700;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--additional-color-text);
   background-color: rgba(47, 48, 58, 0.8);
@@ -407,11 +408,13 @@ ol {
   width: 100%;
   height: 100%;
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-icon,
 .clients-icon {
   fill: var(--icon-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-link:hover,
@@ -443,6 +446,8 @@ ol {
   align-items: center;
   width: 170px;
   height: 92px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   border: 1px solid var(--icon-color);
   border-radius: 4px;
@@ -578,28 +583,6 @@ ol {
   color: var(--additional-color-text);
 }
 
-/* TRANSITIONS */
-.trans-color {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.trans-hero-btn {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.trans-bg-color {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.trans-fill {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.trans-border {
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 /* FOOTER */
 .footer {
   padding-top: 60px;
@@ -621,9 +604,9 @@ ol {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--additional-color-text);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-item-link:hover,
